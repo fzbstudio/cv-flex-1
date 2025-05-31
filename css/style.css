@@ -1,6 +1,6 @@
 /* style.css */
 /* font posada al codi */
-/* * {
+ /* * {
     outline: 1px dotted red;
 } */
 
@@ -85,6 +85,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .CONT-3-COMPE {
@@ -139,6 +141,17 @@ body {
     flex-shrink: 2;
 }
 
+
+/* ============ FILET =============== */
+
+
+.FILET {
+  background-color: grey;
+  height: 1px;
+  width: 100%;
+}
+
+
 /* ============ IMG =============== */
 
 .CONT-3-ICONA img {
@@ -184,7 +197,7 @@ body {
 }
 
 .TXT_TAB {
-    color: #ffa500;
+    color: white;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -206,6 +219,17 @@ body {
     font-weight: bold;
     font-style: italic;
     text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_COMPE_H {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_COMPE_P {
+    font-weight: 300;
     font-size: 1rem;
 }
 
