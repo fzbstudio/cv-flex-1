@@ -1,8 +1,8 @@
 /* style.css */
 /* font posada al codi */
-* {
-    /* outline: 1px dotted red */
-}
+/* * {
+    outline: 1px dotted red;
+} */
 
 * {
     margin: 0;
@@ -10,8 +10,13 @@
     box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
+
 * {
-    font-family: 'Inter', helvetica, sans-serif;
+    font-family: "Inter", helvetica, sans-serif;
 }
 
 body {
@@ -20,6 +25,8 @@ body {
     justify-content: center;
 }
 
+/* ============ CONTENIDORS =============== */
+
 .CONT-1-EXT {
     /* background-color: #ffa500 */
     width: 750px;
@@ -27,6 +34,7 @@ body {
     outline: 6px solid #000000;
     border-radius: 30px;
     margin-top: 50px;
+    margin-bottom: 50px;
     flex-direction: column;
     overflow: hidden;
     height: fit-content;
@@ -47,14 +55,12 @@ body {
     /* background-color: #e4ffd6 */
 }
 
-.TXTINT {
-    color: #ffa500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
+.CONT-2-BLOC {
+    display: flex;
+    flex-direction: row;
 }
 
-.INTERIOR {
+.CONT-3-TAB {
     display: flex;
     flex-direction: row;
     background-color: #1aa7a7;
@@ -62,25 +68,6 @@ body {
     width: fit-content;
     padding: 5px 15px 5px 10px;
     border-bottom-right-radius: 35px;
-}
-
-.TXT-HEAD-NOM {
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 1rem;
-}
-
-.TXT-HEAD-POS {
-    text-transform: capitalize;
-    color: #a0a0a0;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.TXT-HEAD-LOC {
-    font-style: italic;
-    text-transform: capitalize;
-    font-size: 1rem;
 }
 
 .CONT-3-INFO {
@@ -100,19 +87,152 @@ body {
     width: 100px;
 }
 
-.CONT-2-BLOC {
+.CONT-3-COMPE {
     display: flex;
     flex-direction: row;
 }
 
-img {
-    width: 75px;
+.CONT-3-IDIOMES {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.CONT-4-COMPE-HALF {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* flex-basis: 50%; */
+
+    /* width: 50%; */
+}
+
+.CONT-5-COMPE-AMBIT {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    /* background-color: #00ffff */
+}
+
+.CONT-6-COMPE-IMG-1,
+.CONT-6-COMPE-IMG-2,
+.CONT-6-COMPE-IMG-3 {
+    width: 150px;
+    min-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.CONT-6-COMPE-TXT {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+/* ============ IMG =============== */
+
+.CONT-3-ICONA img {
+        width: 75px;
     height: 75px;
 }
 
-.TXT-INFO-1 {
+
+.CONT-6-COMPE-IMG-1 img {
+    width: 60px;
+    height: 60px;
+}
+
+.CONT-6-COMPE-IMG-2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.CONT-6-COMPE-IMG-3 img {
+    width: 35px;
+    height: 35px;
+}
+
+/* ============ TEXT =============== */
+
+.TXT_HEAD_NOM {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_HEAD_POS {
+    text-transform: capitalize;
+    color: #a0a0a0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.TXT_HEAD_LOC {
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_TAB {
+    color: #ffa500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.TXT_FEINA_H1 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_FEINA_H2 {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_FEINA_P {
     font-weight: bold;
     font-style: italic;
     text-transform: capitalize;
     font-size: 1rem;
+}
+
+.TXT_H {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.TXT_P {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.TXT_B {
+    font-weight: 650;
+    font-size: 1rem;
+}
+
+
+.TXT_IDIOMA_H {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.TXT_IDIOMA_P {
+    font-weight: 300;
+    text-transform: capitalize;
 }
