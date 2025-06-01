@@ -1,6 +1,6 @@
 /* style.css */
 /* font posada al codi */
- /* * {
+/* * {
     outline: 1px dotted red;
 } */
 
@@ -11,9 +11,8 @@
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
-
 
 * {
     font-family: "Inter", helvetica, sans-serif;
@@ -141,24 +140,30 @@ body {
     flex-shrink: 2;
 }
 
-
 /* ============ FILET =============== */
 
-
-.FILET {
-  background-color: grey;
-  height: 1px;
-  width: 100%;
+.FILET_EXT {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+.FILET_INT {
+    background-color: grey;
+    height: 1px;
+    width: 100%;
+}
 
 /* ============ IMG =============== */
 
 .CONT-3-ICONA img {
-        width: 75px;
+    width: 75px;
     height: 75px;
 }
-
 
 .CONT-6-COMPE-IMG-1 img {
     width: 60px;
@@ -249,7 +254,6 @@ body {
     font-weight: 650;
     font-size: 1rem;
 }
-
 
 .TXT_IDIOMA_H {
     font-weight: bold;
