@@ -1,13 +1,14 @@
 /* style.css */
 /* font posada al codi */
- * {
-    outline: 1px dotted red;
-}
 /* * {
+    outline: 1px dotted red;
+} */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 html {
     font-size: 14px;
@@ -23,8 +24,10 @@ body {
     justify-content: center;
 }
 
-/* === CONTENIDORS NIVELL 1 === */
-.CONT_1_EXT {
+/* ============ CONTENIDORS =============== */
+
+.CONT-1-EXT {
+    /* background-color: #ffa500 */
     width: 750px;
     display: flex;
     outline: 6px solid #000000;
@@ -36,9 +39,7 @@ body {
     height: fit-content;
 }
 
-/* === CONTENIDORS NIVELL 2 === */
-
-.CONT_2_HEAD {
+.CONT-2-HEAD {
     display: flex;
     background-color: hsl(0, 0%, 90%);
     flex-direction: column;
@@ -47,44 +48,18 @@ body {
     padding: 10px;
 }
 
-.CONT_2_TAB {
+.CONT-2-TAB {
     border-top: 3px solid #000000;
+
     /* background-color: #e4ffd6 */
 }
 
-.CONT_2 {
+.CONT-2-BLOC {
     display: flex;
     flex-direction: row;
 }
 
-.CONT_2_EXP {
-    display: flex;
-    flex-direction: row;
-}
-
-.CONT_2_COMPE {
-    display: flex;
-    flex-direction: row;
-}
-
-.CONT_2_BLOC_IDM {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 1px;
-    margin-left: 5px;
-    margin-right: 10px;
-}
-
-.CONT_2_CONTACT {
-    display: flex;
-    height: auto;
-    flex-direction: row;
-}
-
-/* === CONTENIDORS NIVELL 3 === */
-
-.CONT_3_TAB {
+.CONT-3-TAB {
     display: flex;
     flex-direction: row;
     background-color: #1aa7a7;
@@ -94,18 +69,16 @@ body {
     border-bottom-right-radius: 35px;
 }
 
-
-.CONT_3_EXP_INFO {
+.CONT-3-INFO {
+    /* background-color: #cafff6 */
     display: flex;
     flex-direction: column;
     width: 600px;
     flex-grow: 1;
-    padding-left: 10px;
-    justify-content: flex-start;
-    align-content: flex-start;
+    padding: 10px;
 }
 
-.CONT_3_EXP_ICONA {
+.CONT-3-ICONA {
     /* background-color: #ffe4a7 */
     display: flex;
     align-items: center;
@@ -115,24 +88,12 @@ body {
     padding-top: 10px;
 }
 
-.CONT_3_CONTACT_INFO {
-      display: flex;
-    flex-direction: column;
-    width: 600px;
-    flex-grow: 1;
-    padding: 10px;
-    justify-content: center;
-    row-gap: 5px;
-}
-
-
-
-.CONT_3_COMPE {
+.CONT-3-COMPE {
     display: flex;
     flex-direction: row;
 }
 
-.CONT_3_IDIOMES {
+.CONT-3-IDIOMES {
     display: inline-block;
     margin-right: 15px;
     margin-left: 10px;
@@ -140,22 +101,17 @@ body {
     margin-top: 5px;
 }
 
-/* === CONTENIDORS NIVELL 4 === */
-
-.CONT_4_COMPE_HALF {
+.CONT-4-COMPE-HALF {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
     flex-grow: 1;
-
     /* flex-basis: 50%; */
+
     /* width: 50%; */
 }
 
-/* === CONTENIDORS NIVELL 5 === */
-
-
-.CONT_5_COMPE_AMBIT {
+.CONT-5-COMPE-AMBIT {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -163,11 +119,9 @@ body {
     /* background-color: #00ffff */
 }
 
-/* === CONTENIDORS NIVELL 6 === */
-
-.CONT_6_COMPE_IMG_1,
-.CONT_6_COMPE_IMG_2,
-.CONT_6_COMPE_IMG_3 {
+.CONT-6-COMPE-IMG-1,
+.CONT-6-COMPE-IMG-2,
+.CONT-6-COMPE-IMG-3 {
     width: 150px;
     min-height: 4rem;
     display: flex;
@@ -178,7 +132,7 @@ body {
     align-items: center;
 }
 
-.CONT_6_COMPE_TXT {
+.CONT-6-COMPE-TXT {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -187,6 +141,7 @@ body {
 }
 
 /* ============ FILET =============== */
+
 .FILET_EXT {
     display: flex;
     justify-content: center;
@@ -204,27 +159,29 @@ body {
 }
 
 /* ============ IMG =============== */
-.CONT_3_EXP_ICONA img {
+
+.CONT-3-ICONA img {
     width: 75px;
     height: 75px;
 }
 
-.CONT_6_COMPE_IMG_1 img {
+.CONT-6-COMPE-IMG-1 img {
     width: 60px;
     height: 60px;
 }
 
-.CONT_6_COMPE_IMG_2 img {
+.CONT-6-COMPE-IMG-2 img {
     width: 50px;
     height: 50px;
 }
 
-.CONT_6_COMPE_IMG_3 img {
+.CONT-6-COMPE-IMG-3 img {
     width: 35px;
     height: 35px;
 }
 
 /* ============ TEXT =============== */
+
 .TXT_HEAD_NOM {
     font-weight: bold;
     text-transform: capitalize;
@@ -306,22 +263,4 @@ body {
 .TXT_IDIOMA_P {
     font-weight: 300;
     text-transform: capitalize;
-}
-
-/* === TAULA GRID === */
-.TAULA_IDM_GRID {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0;
-    align-items: baseline;
-    margin-left: 10px;
-    margin-bottom: 6px;
-    margin-top: 5px;
-}
-
-.TAULA_IDM_GRID div {
-    padding-left: 1px;
-    padding-right: 4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
 }
