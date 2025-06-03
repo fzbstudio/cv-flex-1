@@ -1,8 +1,9 @@
 /* style.css */
 /* font posada al codi */
- * {
+* {
     outline: 1px dotted red;
 }
+
 /* * {
     margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 1 === */
+
 .CONT_1_EXT {
     width: 750px;
     display: flex;
@@ -40,11 +42,12 @@ body {
 
 .CONT_2_HEAD {
     display: flex;
-    background-color: hsl(0, 0%, 90%);
     flex-direction: column;
-
-    /* width: 100% */
-    padding: 10px;
+    gap: 0;
+    align-content: flex-start;
+    background-color: #ffe4a7;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .CONT_2_TAB {
@@ -103,6 +106,7 @@ body {
     padding-left: 10px;
     justify-content: flex-start;
     align-content: flex-start;
+    column-gap: 0;
 }
 
 .CONT_3_EXP_ICONA {
@@ -116,7 +120,7 @@ body {
 }
 
 .CONT_3_CONTACT_INFO {
-      display: flex;
+    display: flex;
     flex-direction: column;
     width: 600px;
     flex-grow: 1;
@@ -187,6 +191,7 @@ body {
 }
 
 /* ============ FILET =============== */
+
 .FILET_EXT {
     display: flex;
     justify-content: center;
@@ -225,6 +230,7 @@ body {
 }
 
 /* ============ TEXT =============== */
+
 .TXT_HEAD_NOM {
     font-weight: bold;
     text-transform: capitalize;
@@ -242,6 +248,13 @@ body {
     font-style: italic;
     text-transform: capitalize;
     font-size: 1rem;
+}
+
+.TXT_HEAD_NOM,
+.TXT_HEAD_POS,
+.TXT_HEAD_LOC {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .TXT_TAB {
@@ -309,6 +322,7 @@ body {
 }
 
 /* === TAULA GRID === */
+
 .TAULA_IDM_GRID {
     display: grid;
     grid-template-columns: auto 1fr;
