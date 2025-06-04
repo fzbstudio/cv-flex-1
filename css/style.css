@@ -1,14 +1,12 @@
-/* style.css */
-/* font posada al codi */
-* {
-    outline: 1px dotted red;
-}
-
 /* * {
+    outline: 1px dotted red;
+} */
+
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 html {
     font-size: 14px;
@@ -25,7 +23,6 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 1 === */
-
 .CONT_1_EXT {
     width: 750px;
     display: flex;
@@ -39,26 +36,19 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 2 === */
-
 .CONT_2_HEAD {
     display: flex;
     flex-direction: column;
     gap: 0;
     align-content: flex-start;
     background-color: #ffe4a7;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
 }
 
 .CONT_2_TAB {
     border-top: 3px solid #000000;
-    /* background-color: #e4ffd6 */
 }
 
-.CONT_2 {
-    display: flex;
-    flex-direction: row;
-}
 
 .CONT_2_EXP {
     display: flex;
@@ -93,10 +83,9 @@ body {
     background-color: #1aa7a7;
     position: relative;
     width: fit-content;
-    padding: 5px 15px 5px 10px;
+    padding: 6px 25px 6px 10px;
     border-bottom-right-radius: 35px;
 }
-
 
 .CONT_3_EXP_INFO {
     display: flex;
@@ -129,8 +118,6 @@ body {
     row-gap: 5px;
 }
 
-
-
 .CONT_3_COMPE {
     display: flex;
     flex-direction: row;
@@ -145,7 +132,6 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 4 === */
-
 .CONT_4_COMPE_HALF {
     display: flex;
     flex-direction: column;
@@ -157,8 +143,6 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 5 === */
-
-
 .CONT_5_COMPE_AMBIT {
     display: flex;
     flex-direction: row;
@@ -168,7 +152,6 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 6 === */
-
 .CONT_6_COMPE_IMG_1,
 .CONT_6_COMPE_IMG_2,
 .CONT_6_COMPE_IMG_3 {
@@ -191,7 +174,6 @@ body {
 }
 
 /* ============ FILET =============== */
-
 .FILET_EXT {
     display: flex;
     justify-content: center;
@@ -230,7 +212,6 @@ body {
 }
 
 /* ============ TEXT =============== */
-
 .TXT_HEAD_NOM {
     font-weight: bold;
     text-transform: capitalize;
@@ -254,7 +235,8 @@ body {
 .TXT_HEAD_POS,
 .TXT_HEAD_LOC {
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .TXT_TAB {
@@ -262,25 +244,29 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.03em;
 }
 
 .TXT_FEINA_H1 {
     font-weight: bold;
     text-transform: capitalize;
     font-size: 1rem;
+    margin-top: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .TXT_FEINA_H2 {
     font-weight: bold;
     text-transform: capitalize;
     font-size: 1rem;
+    color: hsl(0, 0%, 40%);
 }
 
 .TXT_FEINA_P {
-    font-weight: bold;
-    font-style: italic;
-    text-transform: capitalize;
+    font-weight: 300;
     font-size: 1rem;
+    text-align: left;
 }
 
 .TXT_COMPE_H {
@@ -304,6 +290,8 @@ body {
 .TXT_P {
     font-weight: 300;
     font-size: 1rem;
+    padding-bottom: 10px;
+    padding-top: 2px;
 }
 
 .TXT_B {
@@ -322,7 +310,6 @@ body {
 }
 
 /* === TAULA GRID === */
-
 .TAULA_IDM_GRID {
     display: grid;
     grid-template-columns: auto 1fr;
