@@ -8,6 +8,7 @@
 }
 
 html {
+    color-scheme: light;
     font-size: 14px;
 }
 
@@ -24,7 +25,8 @@ body {
 
 /* === CONTENIDORS NIVELL 1 === */
 .CONT_1_EXT {
-    width: 750px;
+    max-width: 750px;
+    width: 95%;
     display: flex;
     outline: 6px solid #000000;
     border-radius: 30px;
@@ -115,7 +117,7 @@ body {
     justify-content: center;
     width: 100px;
     padding-bottom: 10px;
-    padding-top: 0px;
+    padding-top: 0;
     flex-direction: column;
     align-content: flex-start;
 }
@@ -203,6 +205,12 @@ body {
 }
 
 /* ============ IMG =============== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .CONT_3_EXP_ICONA img {
     width: 75px;
     height: 75px;
@@ -340,3 +348,13 @@ body {
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
+/* === MEDIA QUERIES ===*/
+
+@media (max-width: 600px) {
+    .CONT_2_COMPE {
+        flex-direction: column; /* Canvia de fila a columna */
+    }
+}
+
+/* 025-07-03 14:00 */
