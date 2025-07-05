@@ -1,6 +1,16 @@
-/* * {
+ /* * {
     outline: 1px dotted red;
 } */
+
+/* * {
+    color: transparent !important;
+    background-image: none !important;
+}
+div {
+    border: 1px solid blue !important;
+    min-height: 20px;
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
+    background-color: #7fbcd7;
 }
 
 /* === CONTENIDORS NIVELL 1 === */
@@ -49,14 +59,27 @@ body {
 }
 
 .CONT_2_TAB {
-    border-top: 3px solid #000000;
+    /* border-top: 3px solid #000000; */
+    background-color: white;
+}
 
-    /* background-color: #b4e584 */
+.CONT_2_TAB_ALT {
+    /* border-top: 3px solid #000000; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+
+    /* display: flex; */
 }
 
 .CONT_2_EXP {
     display: flex;
     flex-direction: row;
+}
+
+.CONT_2_EXP_ALT {
+    display: flex;
+    flex-direction: column;
 }
 
 .CONT_2_COMPE {
@@ -80,9 +103,26 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 3 === */
+
+.ESQUERRA {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .CONT_3_TAB {
     /* display: flex */
     /* flex-direction: row */
+    background-color: #1aa7a7;
+    position: relative;
+    width: fit-content;
+    padding: 6px 25px 6px 10px;
+    border-bottom-right-radius: 35px;
+}
+
+.CONT_3_TAB_ALT {
+    display: flex;
+    flex-direction: row;
     background-color: #1aa7a7;
     position: relative;
     width: fit-content;
@@ -102,6 +142,18 @@ body {
     margin-top: 4px;
 }
 
+.CONT_3_EXP_INFO_ALT {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    flex-grow: 1;
+    padding-left: 10px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    column-gap: 0;
+    margin-top: 4px;
+}
+
 .CONT_3_EXP_ICONA {
     /* background-color: #ffe4a7 */
     display: flex;
@@ -110,19 +162,21 @@ body {
     width: 100px;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-right: 0;
 }
 
 .CONT_3_EXP_ICONA_UP {
-    /* background-color: #ffe4a7 */
+    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100px;
-    padding-bottom: 24px;
+    padding-bottom: 0;
     padding-top: 0;
     flex-direction: column;
     align-content: center;
     margin-bottom: 0;
+    margin-left: auto;
 }
 
 .CONT_3_CONTACT_INFO {
@@ -207,12 +261,18 @@ body {
     width: 100%;
 }
 
-/* ============ IMG =============== */
-img {
-    max-width: 100%;
-    height: auto;
+.FILET_GRUIX {
+    display: flex;
+    width: 100%;
+    height: 4px;
+    background-color: black;
 }
 
+/* ============ IMG =============== */
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
 .CONT_3_EXP_ICONA img {
     width: 75px;
     height: 75px;
@@ -242,28 +302,30 @@ img {
 .TXT_HEAD_NOM {
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .TXT_HEAD_POS {
     text-transform: capitalize;
     color: #a0a0a0;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .TXT_HEAD_LOC {
     font-style: italic;
     text-transform: capitalize;
     font-size: 1rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
-.TXT_HEAD_NOM,
-.TXT_HEAD_POS,
-.TXT_HEAD_LOC {
+.TXT_HEAD_NOM {
     margin-top: 0;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .TXT_TAB {
@@ -333,7 +395,7 @@ img {
     text-transform: capitalize;
 }
 
-/* === TAULA GRID === */
+/* === TAULES GRID === */
 .TAULA_IDM_GRID {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -351,13 +413,36 @@ img {
     padding-bottom: 1px;
 }
 
+
+.TAULA_CONTACT_GRID {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0;
+    align-items: baseline;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.TAULA_CONTACT_GRID div {
+    padding-left: 1px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.TAULA_CONTACT_GRID img {
+   width: 20px;
+}
+
+
+
 /* === MEDIA QUERIES === */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .CONT_2_COMPE {
         flex-direction: column;
 
         /* Canvia de fila a columna */
-    }
-}
-
+/* } */
+/* } */
 /* 025-07-03 14:00 */
