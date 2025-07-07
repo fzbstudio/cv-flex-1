@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px dotted red;
-} 
+} */
 
 /* * {
     color: transparent !important;
@@ -55,7 +55,10 @@ body {
     gap: 0;
     align-content: flex-start;
     background-color: white;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .CONT_2_TAB {
@@ -108,7 +111,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
     padding-top: 0;
     flex-direction: column;
     align-content: center;
@@ -237,9 +240,11 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 6 === */
+
 .CONT_6_COMPE_IMG_1,
 .CONT_6_COMPE_IMG_2,
 .CONT_6_COMPE_IMG_3 {
+    /* background-color: orange; */
     width: 150px;
     min-height: 4rem;
     display: flex;
@@ -320,18 +325,33 @@ body {
     height: 35px;
 }
 
+.TAULA_COMPE_GRID_LOGO_1 img {
+    width: 75px;
+    height: 75px;
+}
+
+.TAULA_COMPE_GRID_LOGO_2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.TAULA_COMPE_GRID_LOGO_3 img {
+    width: 35px;
+    height: 35px;
+}
+
 /* ============ TEXT =============== */
 .TXT_HEAD_NOM {
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .TXT_HEAD_POS {
     text-transform: capitalize;
     color: #a0a0a0;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -339,9 +359,10 @@ body {
 .TXT_HEAD_LOC {
     font-style: italic;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-top: 3px;
     padding-bottom: 3px;
+    color: #5d5d5d;
 }
 
 .TXT_HEAD_NOM {
@@ -420,29 +441,68 @@ body {
 /* === TAULES GRID === */
 .TAULA_IDM_GRID {
     display: grid;
-    grid-template-columns: auto 1fr auto 1fr;
+    grid-template-columns: auto 263px auto 1fr;
     gap: 0;
     align-items: baseline;
     margin-left: 10px;
-    margin-bottom: 6px;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .TAULA_IDM_GRID div {
     padding-left: 1px;
-    padding-right: 4px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.TAULA_COMPE_GRID {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px 1fr;
+    gap: 0;
+    /* align-items: baseline; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.TAULA_COMPE_GRID div {
+    padding-left: 1px;
+    padding-right: 1px;
     padding-top: 1px;
     padding-bottom: 1px;
 }
 
+.TAULA_COMPE_GRID_CASELLA {
+    /* background-color: aqua; */
+    align-content: center;
+}
+
+.TAULA_COMPE_GRID_LOGO_1,
+.TAULA_COMPE_GRID_LOGO_2,
+.TAULA_COMPE_GRID_LOGO_3 {
+    /* background-color: orange; */
+    /* width: 150px; */
+    min-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+    column-gap: 10px;
+    align-items: center;
+}
+
+
+
 .TAULA_CONTACT_GRID {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 250px auto 1fr;
     gap: 0;
     align-items: baseline;
     margin-left: 10px;
-    margin-bottom: 6px;
-    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .TAULA_CONTACT_GRID div {
@@ -469,4 +529,4 @@ body {
     }
 }
 
-/* 2025-07-06 06:00 */
+/* 2025-07-07 10:00 */
