@@ -1,7 +1,6 @@
 /* * {
     outline: 1px dotted red;
 } */
-
 /* * {
     color: transparent !important;
     background-image: none !important;
@@ -10,7 +9,6 @@ div {
     border: 1px solid blue !important;
     min-height: 20px;
 } */
-
 * {
     margin: 0;
     padding: 0;
@@ -71,6 +69,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: row;
+    margin-right: 10px;
 
     /* display: flex; */
 }
@@ -78,6 +77,8 @@ body {
 .CONT_2_EXP {
     display: flex;
     flex-direction: row;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .CONT_2_EXP_ALT {
@@ -121,10 +122,10 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 3 === */
-
 .ESQUERRA {
     display: flex;
     flex-direction: column;
+    width: 600px;
 }
 
 .CONT_3_TAB {
@@ -150,19 +151,18 @@ body {
 .CONT_3_EXP_INFO {
     display: flex;
     flex-direction: column;
-    width: 600px;
     flex-grow: 1;
-    padding-left: 10px;
     justify-content: flex-start;
     align-content: flex-start;
     column-gap: 0;
     margin-top: 4px;
+    width: 600px;
 }
 
 .CONT_3_EXP_INFO_ALT {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     flex-grow: 1;
     padding-left: 10px;
     justify-content: flex-start;
@@ -180,6 +180,8 @@ body {
     padding-bottom: 10px;
     padding-top: 10px;
     margin-right: 0;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
 .CONT_3_EXP_ICONA_UP {
@@ -240,7 +242,6 @@ body {
 }
 
 /* === CONTENIDORS NIVELL 6 === */
-
 .CONT_6_COMPE_IMG_1,
 .CONT_6_COMPE_IMG_2,
 .CONT_6_COMPE_IMG_3 {
@@ -292,7 +293,6 @@ body {
     max-width: 100%;
     height: auto;
 } */
-
 .CONT_2_CONT_ICONA_EGO img {
     width: 100%;
     height: auto;
@@ -306,7 +306,8 @@ body {
 .CONT_3_EXP_ICONA_UP img {
     width: 75px;
     height: 75px;
-    /*  width: 75px; */
+
+    /* width: 75px; */
     /* height: 75px; */
 }
 
@@ -399,7 +400,6 @@ body {
 .TXT_FEINA_P {
     font-weight: 300;
     font-size: 1rem;
-    text-align: left;
     line-height: 1.3;
     padding-top: 2px;
     padding-bottom: 8px;
@@ -445,6 +445,7 @@ body {
     gap: 0;
     align-items: baseline;
     margin-left: 10px;
+    margin-right: auto;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -460,6 +461,7 @@ body {
     display: grid;
     grid-template-columns: 150px 1fr 150px 1fr;
     gap: 0;
+
     /* align-items: baseline; */
     margin-left: 5px;
     margin-right: 5px;
@@ -493,8 +495,6 @@ body {
     align-items: center;
 }
 
-
-
 .TAULA_CONTACT_GRID {
     display: grid;
     grid-template-columns: auto 250px auto 1fr;
@@ -517,16 +517,25 @@ body {
 }
 
 /* === MEDIA QUERIES === */
-@media (max-width: 600px) {
-    .CONT_3_COMPE {
+/* @media (max-width: 600px) {
+    .CONT_2_EXP,
+    .CONT_3_EXP {
         flex-direction: column;
     }
-}
+} */
 
 @media (max-width: 600px) {
+    .TAULA_COMPE_GRID {
+        grid-template-columns: 200px 1fr;
+        display: grid;
+    }
     .TAULA_IDM_GRID {
         grid-template-columns: auto 1fr;
     }
+    .TAULA_CONTACT_GRID {
+        grid-template-columns: auto 1fr;
+    }
+   
 }
 
-/* 2025-07-07 10:00 */
+/* 2025-07-08 10:00 */
