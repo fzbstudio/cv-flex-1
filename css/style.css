@@ -1,14 +1,12 @@
 /* * {
-    outline: 1px dotted red;
+ outline: 1px dotted red
 } */
+
 /* * {
-    color: transparent !important;
-    background-image: none !important;
-}
-div {
-    border: 1px solid blue !important;
-    min-height: 20px;
+    /color: transparent !important 
+     background-image: none !important 
 } */
+
 * {
     margin: 0;
     padding: 0;
@@ -182,6 +180,7 @@ body {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: auto;
+    padding-left: 10px;
 }
 
 .CONT_3_EXP_ICONA_UP {
@@ -523,19 +522,19 @@ body {
         flex-direction: column;
     }
 } */
-
 @media (max-width: 600px) {
     .TAULA_COMPE_GRID {
         grid-template-columns: 200px 1fr;
         display: grid;
     }
+
     .TAULA_IDM_GRID {
         grid-template-columns: auto 1fr;
     }
+
     .TAULA_CONTACT_GRID {
         grid-template-columns: auto 1fr;
     }
-   
 }
 
-/* 2025-07-08 10:00 */
+/* 2025-07-09 10:00 */
